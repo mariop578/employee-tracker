@@ -1,13 +1,11 @@
-// Get the client
-const mysql = require("mysql2/promise");
+// connection.js
+const mysql = require("mysql2");
 require("dotenv").config();
-// import mysql from "mysql2/promise";
 
-// Create the connection to database
 const connection = mysql.createConnection({
   host: process.env.HOST,
   user: "root",
   database: process.env.DB_NAME,
 });
 
-module.exports = connection;
+module.exports = connection.promise(); // Use promise() to enable async/await with execute
