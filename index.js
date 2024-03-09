@@ -1,5 +1,5 @@
 const inquirer = require("inquirer");
-const allDep = require("./lib/queries");
+const [allDep, allEmployee, allRole] = require("./lib/queries");
 // import mysql from "mysql2/promise";
 
 const questions = [
@@ -41,8 +41,16 @@ function init() {
     |   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝            |
     +---------------------------------------------------------------------+`);
   inquirer.prompt(questions).then((response) => {
-    if (response.menu === "View all departments") {
-      allDep();
+    switch (response.menu) {
+      case "View all departments":
+        allDep();
+        break;
+      case "View all roles":
+        allRole();
+        break;
+      case "View all employees":
+        allEmployee();
+        break;
     }
   });
 }
