@@ -1,5 +1,5 @@
 const inquirer = require("inquirer");
-const [allDep, allEmployee, allRole] = require("./lib/queries");
+const [allDep, allEmployee, allRole, addDep] = require("./lib/queries");
 // import mysql from "mysql2/promise";
 
 const questions = [
@@ -50,6 +50,12 @@ function init() {
         break;
       case "View all employees":
         allEmployee();
+        break;
+      case "Add a department":
+        addDep();
+        break;
+      case "Exit":
+        process.exit(0);
         break;
     }
   });
