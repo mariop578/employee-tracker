@@ -1,4 +1,4 @@
-# employee-tracker# Empployee Tracker
+# Employee Tracker
 
 ![License Badge](https://img.shields.io/badge/license-MIT%20License-brightgreen)
 
