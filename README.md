@@ -36,8 +36,11 @@ This project is licensed under the MIT License License - see the [LICENSE.md](LI
 
 ## Demo
 
-None
+https://github.com/mariop578/employee-tracker/assets/147361826/4f8a972c-4a11-4644-97f5-710854aa5e01
 
 ## Questions
 
 If you have any questions, feel free to reach out to me at partidam578. You can also visit [my GitHub profile](https://github.com/mariop578).
+
+
+
