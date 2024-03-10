@@ -1,5 +1,13 @@
 const inquirer = require("inquirer");
-const [allDep, allEmployee, allRole, addDep] = require("./lib/queries");
+const [
+  allDep,
+  allEmployee,
+  allRole,
+  addDep,
+  addRole,
+  addEmployee,
+  updateEmployeeRole,
+] = require("./lib/queries");
 // import mysql from "mysql2/promise";
 
 const questions = [
@@ -53,6 +61,15 @@ function init() {
         break;
       case "Add a department":
         addDep();
+        break;
+      case "Add a role":
+        addRole();
+        break;
+      case "Add an employee":
+        addEmployee();
+        break;
+      case "Update an employee role":
+        updateEmployeeRole();
         break;
       case "Exit":
         process.exit(0);
